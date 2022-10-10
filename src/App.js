@@ -1,10 +1,26 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import ErrorPage from "./components/ErrorPage";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home></Home>,
+    errorElement: <ErrorPage></ErrorPage>,
+  },
+  {
+    path: "/home",
+    element: <Home></Home>,
+  },
+]);
 
 function App() {
   return (
     <div>
-      <h1 className="text-red-600 text-center">Hello</h1>
-      <button className="btn btn-primary ml-10">Button</button>
+      <Navbar></Navbar>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }

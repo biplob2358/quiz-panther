@@ -1,32 +1,35 @@
 import React from "react";
-import { a } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-sky-700">
+      <div className="navbar bg-sky-400">
         <div className="flex-1">
-          <a className="btn btn-ghost text-white normal-case text-xl" href="./">
+          <Link
+            className="btn btn-ghost text-white normal-case text-xl"
+            to="./"
+          >
             Quiz Panther 📚
-          </a>
+          </Link>
         </div>
         <div className="flex-none">
           <ul className="menu text-white menu-horizontal p-0 md:col-3">
             <div className="sm:block  md:flex">
               <li>
-                <a href="./home">Home</a>
+                <Link to="./home">Home</Link>
               </li>
               <li>
-                <a href="./statistics">Statistics</a>
+                <Link to="./statistics">Statistics</Link>
               </li>
             </div>
             <div className="sm:block md:flex">
               <li>
-                <a href="./blogs">Blogs</a>
+                <Link to="./blogs">Blogs</Link>
               </li>
 
               <li>
-                <a href="./about">About Us</a>
+                <Link to="./about">About Us</Link>
               </li>
             </div>
           </ul>

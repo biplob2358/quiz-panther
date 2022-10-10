@@ -4,7 +4,7 @@ import background from "../images/bg.jpg";
 const Header = () => {
   return (
     <div>
-      <div className="card w-full rounded-none shadow-xl image-full">
+      <div className="card w-full rounded-none mb-5 shadow-xl image-full">
         <figure className="h-96">
           <img src={background} alt="Shoes" />
         </figure>

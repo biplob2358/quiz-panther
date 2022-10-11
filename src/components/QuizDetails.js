@@ -5,13 +5,17 @@ import Question from "./Question";
 const QuizDetails = () => {
   const data = useLoaderData();
   const { questions } = data.data;
-  //   console.log(questions);
+  let index = 1;
+
   return (
     <div>
-      <h1>Book Details</h1>
       <div>
         {questions.map((question) => (
-          <Question key={questions.id} question={question}></Question>
+          <Question
+            index={index++}
+            key={question.id}
+            question={question}
+          ></Question>
         ))}
       </div>
     </div>

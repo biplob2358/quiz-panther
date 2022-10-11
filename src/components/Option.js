@@ -20,12 +20,12 @@ const Option = ({ option, correctAnswer }) => {
   };
   return (
     <div>
-      <label class="inline-flex items-center">
+      <label class="inline-flex items-center ">
         <input
           onClick={() => radioFunction({ option })}
           type="radio"
           class="form-radio"
-          name="accountType"
+          name={correctAnswer}
           value={option}
         />
         <span class="ml-2">{option}</span>

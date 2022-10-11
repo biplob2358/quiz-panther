@@ -9,6 +9,9 @@ const QuizDetails = () => {
 
   return (
     <div>
+      <div className="container grid justify-items-center ">
+        <h1 className="text-5xl text-orange-600">Start Your Quiz</h1>
+      </div>
       <div>
         {questions.map((question) => (
           <Question

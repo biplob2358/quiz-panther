@@ -7,13 +7,16 @@ import "react-toastify/dist/ReactToastify.css";
 const Question = ({ question, index }) => {
   console.log(question);
   const { correctAnswer, options } = question;
-  const notify = () => toast.info(`Answer: ${correctAnswer}`);
+  const notify = () =>
+    toast.info(`Answer: ${correctAnswer}`, {
+      autoClose: 500,
+    });
 
   const ques = question.question;
   const newQues = ques.replace(/(<([^>]+)>)/gi, "");
   return (
     <div>
-      <div className="card  w-2/3 mx-auto mt-10 bg-base-100 shadow-xl">
+      <div className="card  w-2/3 mx-auto mt-10 mb-5 bg-base-100 shadow-xl">
         <div className="card-body">
           <div className="flex">
             <h2 className="card-title">

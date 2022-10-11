@@ -5,14 +5,16 @@ import "react-toastify/dist/ReactToastify.css";
 const Option = ({ option, correctAnswer }) => {
   const radioFunction = ({ option }) => {
     if (option === correctAnswer) {
-      toast.success("Correct Answer.", {
+      toast.success("Correct Answer", {
         position: "top-center",
         theme: "colored",
+        autoClose: 500,
       });
     } else {
-      toast.error(" Wrong Answer.", {
+      return toast.error(" Wrong Answer", {
         position: "top-center",
         theme: "colored",
+        autoClose: 500,
       });
     }
   };

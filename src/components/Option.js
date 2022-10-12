@@ -20,7 +20,7 @@ const Option = ({ option, correctAnswer }) => {
   };
   return (
     <div>
-      <label class="inline-flex items-center ">
+      <label className="inline-flex items-center border lg:w-1/2 w-full shadow-md px-4 py-2 mt-4 rounded-xl border-indigo-500 ">
         <input
           onClick={() => radioFunction({ option })}
           type="radio"

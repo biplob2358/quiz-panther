@@ -5,7 +5,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Question = ({ question, index }) => {
-  console.log(question);
   const { correctAnswer, options } = question;
   const notify = () =>
     toast.info(`Answer: ${correctAnswer}`, {

@@ -4,7 +4,7 @@ import images from "../images/bg.jpg";
 const About = () => {
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200">
+      <div className="hero  min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
           <img src={images} className="max-w-sm rounded-lg shadow-2xl" alt="" />
           <div>
@@ -24,7 +24,6 @@ const About = () => {
               WA, with several remote offices around the country. For inquiries
               and questions, drop us a line.
             </p>
-            <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>
